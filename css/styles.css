@@ -2,7 +2,7 @@
     --link-hover-color: #2196F3;
     --heading-color: #212121;
     --paragraph-color: #757575;
-    --logo-font-family: Raleway, sans-serif;
+    --logo-font-family: "Raleway", sans-serif;
     --nav-logo-color: #000000;
     --main-section-backgroud-color: #2F303A;
     --main-section-text-color: #FFFFFF;
@@ -17,6 +17,16 @@ body {
 
 ul {
     list-style-type: none;
+}
+.global-header {
+    border-bottom: 1px solid #ECECEC;
+}
+.global-header .main-navigation ul {
+    display: flex;
+}
+
+.container {
+    display: flex;
 }
 
 .button {
@@ -77,11 +87,26 @@ ul {
     width: 1600px;
     height: 600px;
 }
+
+
 .main-section-head {
+    text-align: center;
+    padding-top: 200px;
     text-decoration: none;
     font-weight: 900;
-    line-height: 4.28;
-    color:var(--main-section-text-color)
+    font-size: 44px;
+    line-height: 60px;
+    color:var(--main-section-text-color);
+    
+}
+.main-section .button {
+    margin-left: 700px;
+}
+
+.quality-container {
+    display: flex;
+    flex-basis: calc((100%-270px))/4;
+    gap: 30px;
 }
 
 
