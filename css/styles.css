@@ -18,6 +18,11 @@ body {
 ul {
     list-style-type: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .global-header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -27,6 +32,11 @@ ul {
 
 .container {
     display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    margin-left: 215px;
 }
 
 .button {
@@ -93,20 +103,28 @@ ul {
     text-align: center;
     padding-top: 200px;
     text-decoration: none;
+    font-family: "Roboto";
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     color:var(--main-section-text-color);
-    
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin: 0 auto 0 auto;
 }
 .main-section .button {
     margin-left: 700px;
+    margin-bottom: 200px;
+    margin-top: 30px;
 }
 
 .quality-container {
     display: flex;
     flex-basis: calc((100%-270px))/4;
     gap: 30px;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -115,7 +133,11 @@ ul {
     height: 16px;
     font-weight: 700;
     color: var(--heading-color);
-    line-height: 16.41px;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 .company-qualities-text {
     line-height: 24px;
@@ -123,35 +145,77 @@ ul {
     height: 75px;
     font-weight: 400;
     color: var(--paragraph-color);
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
 .section-heading {
     font-weight: 700;
-    height: 42px;
     line-height: 42.19px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
+.what-we-do-container {
+    flex-direction: column;
+    margin-bottom: 94px;
+}
+.what-we-do-container h2 {
+    align-items: center;
+    margin-bottom: 50px;
+}
+.what-we-do-img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 .our-team-section {
+    flex-direction: column;
     background-color: var(--our-team-background-color)
 }
+
+.team-member-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 .team-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: var(--main-section-text-color);
 }
 
+.team-member-img{
+    margin-bottom: 30px;
+}
 .team-member-name {
+    white-space: nowrap;
+    flex-direction: row;
     width: 145px; 
     height: 19px;
     font-weight: 500;
     line-height: 18.75px;
-    color: var(--heading-color)
-
+    color: var(--heading-color);
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .team-member-rank {
+    white-space: nowrap;
     width:130px; 
     height:19px;
     font-weight: 400;
     line-height: 1.33;
     color: var(--paragraph-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .footer-section {
