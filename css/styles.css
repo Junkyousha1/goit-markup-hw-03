@@ -118,7 +118,7 @@ img {
 
 .main-section {
     background-color: var(--main-section-backgroud-color);
-    width: 100%;
+    width: 1600px;
     height: 600px;
     text-align: center;
     margin-top: 0;
@@ -251,7 +251,7 @@ img {
 
 .footer-section {
     display: flex;
-    width: 100%;
+    width: 1600px;
     height: 251px;
     background-color: var(--main-section-backgroud-color);
 }
@@ -283,11 +283,23 @@ img {
     text-decoration: none;
     line-height: 1.17;
 }
+.portfolio-button-list ul{
+    display: flex;
+    flex-direction: row;
+}
+.portfolio-button-list{
+    display: flex;
+    flex-direction: row;
+    height: 38px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
 .portfolio-button {
     color: var(--heading-color);
     border-radius: 4px;
     cursor: pointer;
+    border: 0;
 }
 .portfolio-button:hover,:focus{
     background-color: var(--link-hover-color);
@@ -296,8 +308,30 @@ img {
 
 
 .portfolio-section {
-    background-color: var(--portfolio-background-color)
+    display: flex;
+    background-color: var(--portfolio-background-color);
+    margin-top: 94px;
+    flex-direction: column;
 }
+
+.portfolio-project-card-set{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 30px;
+}
+.portfolio-project-card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100%-60px)/3);
+}
+
+.portfolio-project-info{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+}
+
 
 .portofolio-project-name {
     font-weight: 700;
@@ -305,6 +339,7 @@ img {
     color: var(--heading-color);
 }
 .portfolio-project-description{
+    margin-top: 4px;
     font-weight: 400;
     line-height: 30px;
     color: var(--paragraph-color);
