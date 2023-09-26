@@ -290,9 +290,9 @@ img {
 .portfolio-button-list{
     display: flex;
     flex-direction: row;
-    height: 38px;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
 }
 
 .portfolio-button {
@@ -300,6 +300,15 @@ img {
     border-radius: 4px;
     cursor: pointer;
     border: 0;
+    height: 38px;
+    padding: 8px 22px;
+    background-color: var(--our-team-background-color);
+    color: var(--heading-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
 }
 .portfolio-button:hover,:focus{
     background-color: var(--link-hover-color);
@@ -309,7 +318,6 @@ img {
 
 .portfolio-section {
     display: flex;
-    background-color: var(--portfolio-background-color);
     margin-top: 94px;
     flex-direction: column;
 }
@@ -328,7 +336,7 @@ img {
 
 .portfolio-project-info{
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--portfolio-background-color);
     border-top: 0;
 }
 
